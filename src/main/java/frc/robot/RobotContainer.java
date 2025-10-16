@@ -17,8 +17,12 @@ public class RobotContainer {
   private Motor m_motor = new Motor();
   private ArcadeMotor m_arcadeMotor = new ArcadeMotor(m_motor, m_joystick);
 
+  // private Drivetrain m_drivetrain = new Drivetrain();
+  // private ArcadeDrive m_arcadeDrive = new ArcadeDrive(m_drivetrain, m_joystick);
+
   public RobotContainer() {
     m_motor.setDefaultCommand(m_arcadeMotor);
+    // m_drivetrain.setDefaultCommand(m_arcadeDrive);
     configureBindings();
   }
 
