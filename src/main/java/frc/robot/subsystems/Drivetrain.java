@@ -14,8 +14,8 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.constants.DrivetrainConstants;
 
 public class Drivetrain extends SubsystemBase {
-  private VictorSPX m_leftPrimary = new VictorSPX(DrivetrainConstants.kLeftPrimaryID);
-  private TalonSRX m_leftSecondary = new TalonSRX(DrivetrainConstants.kLeftSecondaryID);
+  private TalonSRX m_leftPrimary = new TalonSRX(DrivetrainConstants.kLeftPrimaryID);
+  private VictorSPX m_leftSecondary = new VictorSPX(DrivetrainConstants.kLeftSecondaryID);
   private TalonSRX m_rightPrimary = new TalonSRX(DrivetrainConstants.kRightPrimaryID);
   private VictorSPX m_rightSecondary = new VictorSPX(DrivetrainConstants.kRightSecondaryID);
 
