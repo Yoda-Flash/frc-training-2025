@@ -8,4 +8,7 @@ public class DrivetrainConstants {
 
     public static final double kTurnMultiplier = 0.5;
     public static final double kSpeedMultiplier = 0.5;
+
+    public static final double kSpeed = 0.1;
+    public static final double kTimeInSeconds = 5;
 }
