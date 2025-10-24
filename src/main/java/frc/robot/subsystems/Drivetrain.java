@@ -49,11 +49,19 @@ public class Drivetrain extends SubsystemBase {
     return m_rightPrimary.getMotorOutputPercent();
   }
 
+  public double getLeftEncoderTicks() {
+    return m_leftPrimary.getSelectedSensorPosition();
+  }
+
+  public double getRightEncoderTicks() {
+    return m_rightPrimary.getSelectedSensorPosition();
+  }
+
   @Override
   public void periodic() {
     // This method will be called once per scheduler run
     SmartDashboard.putNumber("Left Speed", getLeftSpeed());
     SmartDashboard.putNumber("Right Speed", getRightSpeed());
-
+    SmartDashboard.putNumber("Ticks", getLeftEncoderTicks());
   }
 }
